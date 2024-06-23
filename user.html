@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HTML Forms
+        </title>
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                height: 100vh;
+                margin: 0;
+                background-color: white;
+
+            }
+            Form{
+                width: 400px;
+                background-color: white;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px
+                 rgba(0, 0, 0, 0.1);
+            }
+
+            Fieldset{
+                border: 1px solid black;
+                padding: 10px;
+                margin: 0;
+
+            }
+            legend{
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            label{
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            input[type="password"],
+            textarea,    
+            input[type="date"]{
+                width: calc(100% -20px);
+                padding: 8px;
+                margin-bottom: 10px;
+                box-sizing: border-box;
+                border: 1px solid gray;
+                border-radius: 4px;
+            }
+
+            input[type="radio"]{
+                margin-left: 30px;
+            }
+
+
+            input[type="submit"]{
+                padding: 10px 20px;
+                align-self: center;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        
+
+
+        </style>
+         <link rel="stylesheet" href="new.css">
+         
+    </head>
+    <body>
+      <nav>
+        <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="more.html">More</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+        <form >
+            <fieldset>
+                <legend>
+                    User Personal Information
+                </legend>
+                <label>Enter Your Full Name</label>
+                <input type="text" name="name"/>
+
+                <label>Enter Your Email</label>
+                <input type="email" name="email"/>
+
+                <label>Enter Your password</label>
+                <input type="password" name="pass"/>
+
+                <label>Enter Your Confirm password</label>
+                <input type="password" name="confirmpass"/>
+
+                <label>Enter Your Gender</label>
+                <input type="radio" name="gender" value="male"/>Male
+                <input type="radio" name="gender" value="Female"/>FeMale
+                <input type="radio" name="gender" value="other"/>other
+
+                <label>Enter Your DOB</label>
+                <input type="Date" name="DOB">
+
+                <label>Enter Your Address</label>
+                <textarea name="address"></textarea>
+
+                <input type="submit" value="submit">
+            </fieldset>
+        </form>
+    </body>
+
+</html>
